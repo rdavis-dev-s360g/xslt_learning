@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="transformation04.xslt"?>
+<FormsSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="FormsFactorySchema.v0.3.xsd">
+	<request>
+		<requestId>1234</requestId>
+		<formNumber>frmA733</formNumber>
+		<formCreationDate>2019-07-16T19:20:30.45+01:00</formCreationDate>
+		<formDescription>Form XYZ Description</formDescription>
+		<tenantId>t001</tenantId>
+		<orgId>Org-01g</orgId>
+		<sourceSystem>SS05823</sourceSystem>
+		<documentStorageSystem/>
+		<dispatchMethod/>
+		<barCode/>
+	</request>
+	<entity>
+		<logo><![CDATA[cdn://logos/Toyota1.png]]></logo>
+		<shortName>Toyota</shortName>
+		<longName>Toyota Motor Insurance</longName>
+		<legalEntityShortName>Toyota</legalEntityShortName>
+		<legalEntityLongName>Toyota Motor Insurance Services</legalEntityLongName>
+		<phoneNumber>18001231234</phoneNumber>
+		<operatingHours>8am-6pm</operatingHours>
+		<otherHours/>
+		<returnAddress1>Toyota Motor Sales, U.S.A., Inc.</returnAddress1>
+		<returnAddress2/>
+		<disclaimer>©2020 Toyota Motor Sales, U.S.A., Inc. All information applies to U.S. vehicles only.</disclaimer>
+	</entity>
+	<contact>
+		<type>purchaser</type>
+		<nameLine1>Jane A Smith</nameLine1>
+		<nameLine2/>
+		<firstName>Jane</firstName>
+		<middleName>Agatha</middleName>
+		<middleInitials>A</middleInitials>
+		<lastName>Smith</lastName>
+		<fullName>Jane Agatha Smith</fullName>
+		<addressLine1>123 Green Trees Lane</addressLine1>
+		<adressLine2>Box 32</adressLine2>
+		<cityStateZip>Port Bend, AK 777777</cityStateZip>
+		<phoneNumber>2341231234</phoneNumber>
+		<mobileIndicator>0</mobileIndicator>
+		<emailAddrress>jasmith@email.com</emailAddrress>
+		<faxNumber/>
+	</contact>
+	<contact>
+		<type>copurchaser</type>
+		<nameLine1>John A Smith</nameLine1>
+		<nameLine2/>
+		<firstName>John</firstName>
+		<middleName>Abraham</middleName>
+		<middleInitials>A</middleInitials>
+		<lastName>Smith</lastName>
+		<fullName>John Abraham Smith</fullName>
+		<addressLine1>123 Green Trees Lane</addressLine1>
+		<adressLine2>Box 32</adressLine2>
+		<cityStateZip>Port Bend, AK 777777</cityStateZip>
+		<phoneNumber>2341231234</phoneNumber>
+		<mobileIndicator>0</mobileIndicator>
+		<emailAddrress>jasmith2@email.com</emailAddrress>
+		<faxNumber/>
+	</contact>
+	<vehicle>
+		<vin>JT152EEA100302159</vin>
+		<make>Toyota</make>
+		<model>Camry</model>
+		<year>2017</year>
+		<odometerMileage>57663</odometerMileage>
+		<vehicleType>4D Sedan</vehicleType>
+	</vehicle>
+	<agreement>
+		<agreementNumber>gre12-as334412</agreementNumber>
+		<vehiclePurchaseDate>2019-07-16T19:20:30.45+01:00</vehiclePurchaseDate>
+		<leaseRetailTerm/>
+		<financeType>Cash</financeType>
+		<termYears/>
+		<termMonths/>
+		<termMiles/>
+		<purchasePrice>27,032</purchasePrice>
+		<purchaseDate>2019-10-26T21:32:52</purchaseDate>
+		<deductible/>
+		<autoCode>autc1734</autoCode>
+		<planCode>plat-01773</planCode>
+		<certificationNumber>179a773-b</certificationNumber>
+	</agreement>
+</FormsSchema>

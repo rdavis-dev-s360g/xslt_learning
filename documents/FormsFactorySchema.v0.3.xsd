@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2020 sp1 (x64) (http://www.altova.com) by Richard Davis (Source360Group) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" elementFormDefault="qualified" vc:minVersion="1.1">
+	<xs:element name="FormsSchema">
+		<xs:complexType>
+			<xs:all>
+				<xs:element ref="request"/>
+				<xs:element ref="entity"/>
+				<xs:element ref="contact" maxOccurs="unbounded"/>
+				<xs:element ref="vehicle"/>
+				<xs:element ref="agreement"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="request">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="requestId"/>
+				<xs:element ref="formNumber"/>
+				<xs:element ref="formCreationDate"/>
+				<xs:element ref="formDescription"/>
+				<xs:element ref="tenantId"/>
+				<xs:element ref="orgId"/>
+				<xs:element ref="sourceSystem"/>
+				<xs:element ref="documentStorageSystem"/>
+				<xs:element ref="dispatchMethod"/>
+				<xs:element ref="barCode"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="requestId" type="xs:string"/>
+	<xs:element name="formNumber" type="xs:string"/>
+	<xs:element name="formCreationDate" type="xs:dateTime"/>
+	<xs:element name="formDescription" type="xs:string"/>
+	<xs:element name="tenantId" type="xs:string"/>
+	<xs:element name="orgId" type="xs:string"/>
+	<xs:element name="sourceSystem" type="xs:string"/>
+	<xs:element name="documentStorageSystem" type="xs:string"/>
+	<xs:element name="dispatchMethod" type="xs:string"/>
+	<xs:element name="barCode" type="xs:string"/>
+	<xs:element name="entity">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="logo"/>
+				<xs:element ref="shortName"/>
+				<xs:element ref="longName"/>
+				<xs:element ref="legalEntityShortName"/>
+				<xs:element ref="legalEntityLongName"/>
+				<xs:element ref="phoneNumber"/>
+				<xs:element ref="operatingHours"/>
+				<xs:element ref="otherHours"/>
+				<xs:element ref="returnAddress1"/>
+				<xs:element ref="returnAddress2"/>
+				<xs:element ref="disclaimer"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="logo" type="xs:string"/>
+	<xs:element name="shortName" type="xs:string"/>
+	<xs:element name="longName" type="xs:string"/>
+	<xs:element name="legalEntityShortName" type="xs:string"/>
+	<xs:element name="legalEntityLongName" type="xs:string"/>
+	<xs:element name="operatingHours" type="xs:string"/>
+	<xs:element name="otherHours" type="xs:string"/>
+	<xs:element name="returnAddress1" type="xs:string"/>
+	<xs:element name="returnAddress2" type="xs:string"/>
+	<xs:element name="disclaimer" type="xs:string"/>
+	<xs:element name="contact">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="type"/>
+				<xs:element ref="nameLine1"/>
+				<xs:element ref="nameLine2"/>
+				<xs:element ref="firstName"/>
+				<xs:element ref="middleName"/>
+				<xs:element ref="middleInitials"/>
+				<xs:element ref="lastName"/>
+				<xs:element ref="fullName"/>
+				<xs:element ref="addressLine1"/>
+				<xs:element ref="adressLine2"/>
+				<xs:element ref="cityStateZip"/>
+				<xs:element ref="phoneNumber"/>
+				<xs:element ref="mobileIndicator"/>
+				<xs:element ref="emailAddrress"/>
+				<xs:element ref="faxNumber"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="type" type="xs:string"/>
+	<xs:element name="nameLine1" type="xs:string"/>
+	<xs:element name="nameLine2" type="xs:string"/>
+	<xs:element name="firstName" type="xs:string"/>
+	<xs:element name="middleName" type="xs:string"/>
+	<xs:element name="middleInitials" type="xs:string"/>
+	<xs:element name="lastName" type="xs:string"/>
+	<xs:element name="fullName" type="xs:string"/>
+	<xs:element name="addressLine1" type="xs:string"/>
+	<xs:element name="adressLine2" type="xs:string"/>
+	<xs:element name="cityStateZip" type="xs:string"/>
+	<xs:element name="mobileIndicator" type="xs:string"/>
+	<xs:element name="emailAddrress" type="xs:string"/>
+	<xs:element name="faxNumber" type="xs:string"/>
+	<xs:element name="vehicle">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="vin"/>
+				<xs:element ref="make"/>
+				<xs:element ref="model"/>
+				<xs:element ref="year"/>
+				<xs:element ref="odometerMileage"/>
+				<xs:element ref="vehicleType"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="vin" type="xs:string"/>
+	<xs:element name="make" type="xs:string"/>
+	<xs:element name="model" type="xs:string"/>
+	<xs:element name="year" type="xs:string"/>
+	<xs:element name="odometerMileage" type="xs:string"/>
+	<xs:element name="vehicleType" type="xs:string"/>
+	<xs:element name="agreement">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="agreementNumber"/>
+				<xs:element ref="vehiclePurchaseDate"/>
+				<xs:element ref="leaseRetailTerm"/>
+				<xs:element ref="financeType"/>
+				<xs:element ref="termYears"/>
+				<xs:element ref="termMonths"/>
+				<xs:element ref="termMiles"/>
+				<xs:element ref="purchasePrice"/>
+				<xs:element ref="purchaseDate"/>
+				<xs:element ref="deductible"/>
+				<xs:element ref="autoCode"/>
+				<xs:element ref="planCode"/>
+				<xs:element ref="certificationNumber"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="agreementNumber" type="xs:string"/>
+	<xs:element name="vehiclePurchaseDate" type="xs:string"/>
+	<xs:element name="leaseRetailTerm" type="xs:string"/>
+	<xs:element name="financeType" type="xs:string"/>
+	<xs:element name="termYears" type="nillableInteger"/>
+	<xs:element name="termMonths" type="nillableInteger"/>
+	<xs:element name="termMiles" type="nillableInteger"/>
+	<xs:element name="purchasePrice" type="xs:string"/>
+	<xs:element name="purchaseDate" type="xs:dateTime"/>
+	<xs:element name="deductible" type="xs:string"/>
+	<xs:element name="autoCode" type="xs:string"/>
+	<xs:element name="planCode" type="xs:string"/>
+	<xs:element name="certificationNumber" type="xs:string"/>
+	<xs:element name="phoneNumber" type="xs:string"/>
+	
+	<!-- Simple type that allows elements with no value to exist in instance XML -->
+	<xs:simpleType name="nillableInteger">
+			<xs:union>
+			  <xs:simpleType>
+				<xs:restriction base='xs:string'>
+				  <xs:length value='0'/>
+				</xs:restriction>
+			  </xs:simpleType>
+			  <xs:simpleType>
+				<xs:restriction base='xs:integer'>
+				</xs:restriction>
+			  </xs:simpleType>
+			</xs:union>
+		</xs:simpleType>
+</xs:schema>
